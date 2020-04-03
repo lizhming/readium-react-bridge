@@ -1,0 +1,4 @@
+framework module R2Streamer {
+  header "R2Streamer-Swift.h"
+  requires objc
+}

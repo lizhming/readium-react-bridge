@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "In order to open it, we need to know the passphrase required by: provider.com. \n\nTo help you remember it, the following hint is available:"; ObjectID = "OPQ-YI-Mnv"; */
+"OPQ-YI-Mnv.text" = "In order to open it, we need to know the passphrase required by: provider.com. \n\nTo help you remember it, the following hint is available:";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "PWg-iR-COW"; */
+"PWg-iR-COW.normalTitle" = "Continue";
+
+/* Class = "UILabel"; text = "This publication is protected by Readium LCP."; ObjectID = "ahp-0z-soX"; */
+"ahp-0z-soX.text" = "This publication is protected by Readium LCP.";
+
+/* Class = "UILabel"; text = "Your favorite cake?"; ObjectID = "bM8-E5-8Oh"; */
+"bM8-E5-8Oh.text" = "Your favorite cake?";
+
+/* Class = "UITextField"; placeholder = "Passphrase"; ObjectID = "cyG-aj-Lv1"; */
+"cyG-aj-Lv1.placeholder" = "Passphrase";
+
+/* Class = "UIButton"; normalTitle = "Forgot your passphrase?"; ObjectID = "dJF-9a-QVp"; */
+"dJF-9a-QVp.normalTitle" = "Forgot your passphrase?";
+
+/* Class = "UIButton"; normalTitle = "Need more help?"; ObjectID = "jit-MK-J0T"; */
+"jit-MK-J0T.normalTitle" = "Need more help?";

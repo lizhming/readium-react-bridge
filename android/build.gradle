@@ -1,0 +1,237 @@
+
+buildscript {
+//    ext {
+//        buildToolsVersion = "28.0.3"
+//        minSdkVersion = 21
+//        compileSdkVersion = 28
+//        targetSdkVersion = 28
+//        supportLibVersion = "28.0.0"
+//        kotlin_version = "1.3.31"
+//    }
+    repositories {
+
+        jcenter()
+        google()
+        mavenLocal()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url "https://s3.amazonaws.com/repo.commonsware.com" }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:3.4.1")
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.31"
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+        url("../../react-native/android")
+    }
+    maven {
+        // Android JSC is installed from npm
+        url("../../jsc-android/dist")
+    }
+
+    google()
+    jcenter()
+
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+    maven { url "https://s3.amazonaws.com/repo.commonsware.com" }
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+}
+apply plugin: "com.android.library"
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.github.dcendents.android-maven'
+//import com.android.build.OutputFile
+
+//int major = 2
+//int minor = 0
+//int patch = 2
+//int build = 12
+//String type = ""
+//
+//def version = "$major.$minor.$patch"
+//boolean appendBuild = build != 0
+//if (appendBuild || !type.empty) {
+//    version += "-$type"
+//    if (appendBuild) {
+//        version += build
+//    }
+//}
+
+//project.ext.versionName = version
+//project.ext.versionCode = 1_000_000 * major + 10_000 * minor + 100 * patch + build
+
+project.ext.react = [
+    entryFile: "index.js",
+    enableHermes: false,  // clean and rebuild if changing
+]
+
+//apply from: "../../react-native/react.gradle"
+
+/**
+ * Set this to true to create two separate APKs instead of one:
+ *   - An APK that only works on ARM devices
+ *   - An APK that only works on x86 devices
+ * The advantage is the size of the APK is reduced by about 4MB.
+ * Upload all the APKs to the Play Store and people will download
+ * the correct one based on the CPU architecture of their device.
+ */
+//def enableSeparateBuildPerCPUArchitecture = false
+
+/**
+ * Run Proguard to shrink the Java bytecode in release builds.
+ */
+//def enableProguardInReleaseBuilds = false
+
+/**
+ * The preferred build flavor of JavaScriptCore.
+ *
+ * For example, to use the international variant, you can use:
+ * `def jscFlavor = 'org.webkit:android-jsc-intl:+'`
+ *
+ * The international variant includes ICU i18n library and necessary data
+ * allowing to use e.g. `Date.toLocaleString` and `String.localeCompare` that
+ * give correct results when using with locales other than en-US.  Note that
+ * this variant is about 6MiB larger per architecture than default.
+ */
+def jscFlavor = 'org.webkit:android-jsc:+'
+
+/**
+ * Whether to enable the Hermes VM.
+ *
+ * This should be set on project.ext.react and mirrored here.  If it is not set
+ * on project.ext.react, JavaScript will not be compiled to Hermes Bytecode
+ * and the benefits of using Hermes will therefore be sharply reduced.
+ */
+def enableHermes = project.ext.react.get("enableHermes", false);
+
+android {
+    compileSdkVersion 28
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        //applicationId "com.readium_react_bridge"
+        minSdkVersion 21
+        targetSdkVersion 28
+//        versionCode 1
+//        versionName "1.0"
+//        ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86','x86_64'
+    }
+
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+            assets.srcDirs = ['src/main/assets']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "com.facebook.react:react-native:+"  // From node_modules
+
+    if (enableHermes) {
+        def hermesPath = "../../hermesvm/android/";
+        debugImplementation files(hermesPath + "hermes-debug.aar")
+        releaseImplementation files(hermesPath + "hermes-release.aar")
+    } else {
+        implementation jscFlavor
+    }
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.31"
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    implementation "com.github.readium:r2-shared-kotlin:1.0.10"
+    implementation "com.github.readium:r2-navigator-kotlin:1.0.10"
+    implementation "com.github.readium:r2-streamer-kotlin:1.0.10"
+    implementation "com.github.readium:r2-opds-kotlin:1.0.9"
+
+
+    implementation('com.mcxiaoke.koi:core:0.5.5') {
+        exclude module: 'support-v4'
+    }
+    implementation('com.mcxiaoke.koi:async:0.5.5') {
+        exclude module: 'support-v4'
+    }
+
+    implementation "androidx.appcompat:appcompat:1.1.0-beta01"
+    implementation "androidx.recyclerview:recyclerview:1.1.0-alpha06"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation "com.google.android.material:material:1.1.0-alpha07"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'org.nanohttpd:nanohttpd:2.3.2-SNAPSHOT'
+    implementation 'org.nanohttpd:nanohttpd-nanolets:2.3.2-SNAPSHOT'
+
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.8'
+    implementation 'org.jetbrains.anko:anko-design:0.10.8'
+
+    // For SnackBars
+    implementation 'org.jetbrains.anko:anko-commons:0.10.8'
+
+    // Anko Layouts
+    implementation 'org.jetbrains.anko:anko-sdk25:0.10.8'
+
+    // sdk15, sdk19, sdk21, sdk23 are also available
+    implementation 'org.jetbrains.anko:anko-appcompat-v7:0.10.8'
+    implementation 'org.jetbrains.anko:anko-recyclerview-v7:0.10.8'
+
+    // Coroutine listeners for Anko Layouts
+    implementation 'org.jetbrains.anko:anko-sdk25-coroutines:0.10.8'
+    implementation 'org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8'
+
+    // Anko SQLite
+    implementation 'org.jetbrains.anko:anko-sqlite:0.10.8'
+    implementation 'com.github.kittinunf.fuel:fuel:1.16.0'
+
+    //for JVM
+    implementation 'com.github.kittinunf.fuel:fuel-android:1.16.0'
+
+    // async functions (only ~70k)
+    final KOVENANT_VERSION = '3.3.0'
+    implementation "nl.komponents.kovenant:kovenant:$KOVENANT_VERSION"
+    implementation "nl.komponents.kovenant:kovenant-core:$KOVENANT_VERSION"
+    implementation "nl.komponents.kovenant:kovenant-android:$KOVENANT_VERSION"
+    implementation "nl.komponents.kovenant:kovenant-combine:$KOVENANT_VERSION"
+    implementation "nl.komponents.kovenant:kovenant-jvm:$KOVENANT_VERSION"
+    implementation "nl.komponents.kovenant:kovenant-functional:$KOVENANT_VERSION"
+
+    implementation 'org.zeroturnaround:zt-zip:1.12'
+    implementation 'joda-time:joda-time:2.9.9'
+    implementation 'org.slf4j:slf4j-nop:1.7.25'
+
+    implementation 'com.duolingo.open:rtl-viewpager:1.0.3'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0-alpha05'
+
+    implementation 'com.commonsware.cwac:merge:1.1.2'
+    implementation 'com.github.abacritt:sectionedmergeadapter:0.2'
+    implementation 'org.jsoup:jsoup:1.11.2'
+
+}
+
+// Run this once to be able to run the application with BUCK
+// puts all compile dependencies into folder libs for BUCK to use
+task copyDownloadableDepsToLibs(type: Copy) {
+    from configurations.compile
+    into 'libs'
+}
+
+//apply from: file("../../@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)

@@ -1,0 +1,4 @@
+framework module R2Shared {
+  header "R2Shared-Swift.h"
+  requires objc
+}

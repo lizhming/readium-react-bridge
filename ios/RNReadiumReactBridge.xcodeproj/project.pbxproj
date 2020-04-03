@@ -1,0 +1,1053 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD011A4322F212D5000051AB /* UserSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD011A4122F212D5000051AB /* UserSettings.storyboard */; };
+		AD011B4022F264E4000051AB /* tttViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD011B3F22F264E4000051AB /* tttViewController.swift */; };
+		AD011B4922F26BFD000051AB /* MyNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD011B4822F26BFD000051AB /* MyNavViewController.swift */; };
+		AD25D35822EE4BAD00305E1C /* CBZModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D2E722EE4BAC00305E1C /* CBZModule.swift */; };
+		AD25D35922EE4BAD00305E1C /* CBZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D2E822EE4BAC00305E1C /* CBZViewController.swift */; };
+		AD25D35A22EE4BAD00305E1C /* PDFModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D2EA22EE4BAC00305E1C /* PDFModule.swift */; };
+		AD25D35B22EE4BAD00305E1C /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D2EB22EE4BAC00305E1C /* PDFViewController.swift */; };
+		AD25D35C22EE4BAD00305E1C /* LCPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D2EE22EE4BAC00305E1C /* LCPViewModel.swift */; };
+		AD25D35D22EE4BAD00305E1C /* DRMManagementTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D2F122EE4BAC00305E1C /* DRMManagementTableViewController.swift */; };
+		AD25D35E22EE4BAD00305E1C /* DRMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D2F222EE4BAC00305E1C /* DRMViewModel.swift */; };
+		AD25D35F22EE4BAD00305E1C /* ReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D2F322EE4BAC00305E1C /* ReaderViewController.swift */; };
+		AD25D36022EE4BAD00305E1C /* BookmarkDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D2F522EE4BAC00305E1C /* BookmarkDatabase.swift */; };
+		AD25D36122EE4BAD00305E1C /* BookmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D2F622EE4BAC00305E1C /* BookmarkCell.swift */; };
+		AD25D36222EE4BAD00305E1C /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D2F722EE4BAC00305E1C /* Bookmark.swift */; };
+		AD25D36322EE4BAD00305E1C /* BookmarkDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D2F822EE4BAC00305E1C /* BookmarkDataSource.swift */; };
+		AD25D36422EE4BAD00305E1C /* OutlineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D2FA22EE4BAC00305E1C /* OutlineTableViewController.swift */; };
+		AD25D36522EE4BAD00305E1C /* ReaderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D2FD22EE4BAC00305E1C /* ReaderFactory.swift */; };
+		AD25D36622EE4BAD00305E1C /* ReaderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D2FE22EE4BAC00305E1C /* ReaderError.swift */; };
+		AD25D36722EE4BAD00305E1C /* ReaderModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D2FF22EE4BAC00305E1C /* ReaderModule.swift */; };
+		AD25D36822EE4BAD00305E1C /* ReaderFormatModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D30022EE4BAC00305E1C /* ReaderFormatModule.swift */; };
+		AD25D36922EE4BAD00305E1C /* EPUBModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D30222EE4BAC00305E1C /* EPUBModule.swift */; };
+		AD25D36A22EE4BAD00305E1C /* AssociatedColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D30322EE4BAC00305E1C /* AssociatedColors.swift */; };
+		AD25D36B22EE4BAD00305E1C /* UserSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D30722EE4BAC00305E1C /* UserSettingsTableViewController.swift */; };
+		AD25D36C22EE4BAD00305E1C /* AdvancedSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D30822EE4BAC00305E1C /* AdvancedSettingsViewController.swift */; };
+		AD25D36E22EE4BAD00305E1C /* FontSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D30C22EE4BAC00305E1C /* FontSelectionViewController.swift */; };
+		AD25D36F22EE4BAD00305E1C /* EPUBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D30D22EE4BAC00305E1C /* EPUBViewController.swift */; };
+		AD25D37022EE4BAD00305E1C /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D30E22EE4BAC00305E1C /* Toast.swift */; };
+		AD25D37122EE4BAD00305E1C /* OPDSNavigationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D31022EE4BAC00305E1C /* OPDSNavigationTableViewCell.swift */; };
+		AD25D37222EE4BAD00305E1C /* OPDSGroupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D31122EE4BAC00305E1C /* OPDSGroupCollectionViewCell.swift */; };
+		AD25D37322EE4BAD00305E1C /* OPDSRootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D31222EE4BAC00305E1C /* OPDSRootTableViewController.swift */; };
+		AD25D37422EE4BAD00305E1C /* OPDSModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D31322EE4BAC00305E1C /* OPDSModule.swift */; };
+		AD25D37522EE4BAD00305E1C /* OPDSGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D31422EE4BAD00305E1C /* OPDSGroupTableViewCell.swift */; };
+		AD25D37622EE4BAD00305E1C /* OPDSPublicationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D31522EE4BAD00305E1C /* OPDSPublicationInfoViewController.swift */; };
+		AD25D37722EE4BAD00305E1C /* OPDSFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D31622EE4BAD00305E1C /* OPDSFactory.swift */; };
+		AD25D37822EE4BAD00305E1C /* OPDSPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D31722EE4BAD00305E1C /* OPDSPlaceholderView.swift */; };
+		AD25D37922EE4BAD00305E1C /* OPDSCatalogSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D31A22EE4BAD00305E1C /* OPDSCatalogSelectorViewController.swift */; };
+		AD25D37A22EE4BAD00305E1C /* OPDSPublicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D31B22EE4BAD00305E1C /* OPDSPublicationTableViewCell.swift */; };
+		AD25D37B22EE4BAD00305E1C /* OPDSFacetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D31C22EE4BAD00305E1C /* OPDSFacetViewController.swift */; };
+		AD25D37C22EE4BAD00305E1C /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D31E22EE4BAD00305E1C /* AboutTableViewController.swift */; };
+		AD25D37D22EE4BAD00305E1C /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D31F22EE4BAD00305E1C /* AppModule.swift */; };
+		AD25D37E22EE4BAD00305E1C /* ActivityStarter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D32322EE4BAD00305E1C /* ActivityStarter.swift */; };
+		AD25D37F22EE4BAD00305E1C /* DRMLibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D33622EE4BAD00305E1C /* DRMLibraryService.swift */; };
+		AD25D38022EE4BAD00305E1C /* LCPLibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D33822EE4BAD00305E1C /* LCPLibraryService.swift */; };
+		AD25D38122EE4BAD00305E1C /* LCPAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D33B22EE4BAD00305E1C /* LCPAuthenticationViewController.swift */; };
+		AD25D38222EE4BAD00305E1C /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D33E22EE4BAD00305E1C /* LibraryViewController.swift */; };
+		AD25D38322EE4BAD00305E1C /* PublicationMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D33F22EE4BAD00305E1C /* PublicationMenuViewController.swift */; };
+		AD25D38422EE4BAD00305E1C /* LibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D34022EE4BAD00305E1C /* LibraryService.swift */; };
+		AD25D38522EE4BAD00305E1C /* LibraryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D34722EE4BAD00305E1C /* LibraryError.swift */; };
+		AD25D38622EE4BAD00305E1C /* LibraryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D34822EE4BAD00305E1C /* LibraryFactory.swift */; };
+		AD25D38722EE4BAD00305E1C /* BooksDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D34A22EE4BAD00305E1C /* BooksDatabase.swift */; };
+		AD25D38822EE4BAD00305E1C /* PublicationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D34B22EE4BAD00305E1C /* PublicationCollectionViewCell.swift */; };
+		AD25D38922EE4BAD00305E1C /* LibraryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D34C22EE4BAD00305E1C /* LibraryModule.swift */; };
+		AD25D38A22EE4BAD00305E1C /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D34D22EE4BAD00305E1C /* DetailsTableViewController.swift */; };
+		AD25D38B22EE4BAD00305E1C /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D35122EE4BAD00305E1C /* Connection.swift */; };
+		AD25D38C22EE4BAD00305E1C /* Publication.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D35222EE4BAD00305E1C /* Publication.swift */; };
+		AD25D38E22EE4BAD00305E1C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D35522EE4BAD00305E1C /* Result.swift */; };
+		AD25D38F22EE4BAD00305E1C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D35622EE4BAD00305E1C /* UIViewController.swift */; };
+		AD25D39022EE4BAD00305E1C /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25D35722EE4BAD00305E1C /* UIImageExtension.swift */; };
+		AD33AE3022F2701C006E8E9E /* UserSettingsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD33AE2F22F2701C006E8E9E /* UserSettingsNavigationController.swift */; };
+		AD33AE3222F30C84006E8E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD25D32722EE4BAD00305E1C /* Assets.xcassets */; };
+		ADF19CE922F102410032A03B /* DRM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD25D2EF22EE4BAC00305E1C /* DRM.storyboard */; };
+		ADF19CEA22F102410032A03B /* Outline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD25D2FB22EE4BAC00305E1C /* Outline.storyboard */; };
+		ADF19CEC22F102410032A03B /* OPDS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD25D31822EE4BAD00305E1C /* OPDS.storyboard */; };
+		ADF19CED22F102410032A03B /* App.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD25D32022EE4BAD00305E1C /* App.storyboard */; };
+		ADF19CEE22F102410032A03B /* LCPAuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD25D33922EE4BAD00305E1C /* LCPAuthenticationViewController.xib */; };
+		ADF19CEF22F102410032A03B /* Library.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD25D34122EE4BAD00305E1C /* Library.storyboard */; };
+		ADF19CF022F102410032A03B /* PublicationMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD25D34322EE4BAD00305E1C /* PublicationMenuViewController.xib */; };
+		ADF19CF122F102410032A03B /* PublicationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD25D34522EE4BAD00305E1C /* PublicationCollectionViewCell.xib */; };
+		ADF19CF222F102410032A03B /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD25D34F22EE4BAD00305E1C /* About.storyboard */; };
+		ADF19CF322F102560032A03B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD25D32522EE4BAD00305E1C /* Localizable.strings */; };
+		B3E7B58A1CC2AC0600A0062D /* RNReadiumReactBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNReadiumReactBridge.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD7B5A1C22EE80BB004ED0F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58B511D31A9E6C8500147676 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58B511DA1A9E6C8500147676;
+			remoteInfo = RNReadiumReactBridge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		58B511D91A9E6C8500147676 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		134814201AA4EA6300B7C361 /* libRNReadiumReactBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNReadiumReactBridge.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD011A4222F212D5000051AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UserSettings.storyboard; sourceTree = "<group>"; };
+		AD011B3D22F2642D000051AB /* RNReadiumReactBridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNReadiumReactBridge-Header.h"; sourceTree = "<group>"; };
+		AD011B3F22F264E4000051AB /* tttViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tttViewController.swift; sourceTree = "<group>"; };
+		AD011B4822F26BFD000051AB /* MyNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavViewController.swift; sourceTree = "<group>"; };
+		AD25D2E722EE4BAC00305E1C /* CBZModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBZModule.swift; sourceTree = "<group>"; };
+		AD25D2E822EE4BAC00305E1C /* CBZViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBZViewController.swift; sourceTree = "<group>"; };
+		AD25D2EA22EE4BAC00305E1C /* PDFModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFModule.swift; sourceTree = "<group>"; };
+		AD25D2EB22EE4BAC00305E1C /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		AD25D2EE22EE4BAC00305E1C /* LCPViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCPViewModel.swift; sourceTree = "<group>"; };
+		AD25D2F022EE4BAC00305E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DRM.storyboard; sourceTree = "<group>"; };
+		AD25D2F122EE4BAC00305E1C /* DRMManagementTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRMManagementTableViewController.swift; sourceTree = "<group>"; };
+		AD25D2F222EE4BAC00305E1C /* DRMViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRMViewModel.swift; sourceTree = "<group>"; };
+		AD25D2F322EE4BAC00305E1C /* ReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderViewController.swift; sourceTree = "<group>"; };
+		AD25D2F522EE4BAC00305E1C /* BookmarkDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkDatabase.swift; sourceTree = "<group>"; };
+		AD25D2F622EE4BAC00305E1C /* BookmarkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkCell.swift; sourceTree = "<group>"; };
+		AD25D2F722EE4BAC00305E1C /* Bookmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
+		AD25D2F822EE4BAC00305E1C /* BookmarkDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkDataSource.swift; sourceTree = "<group>"; };
+		AD25D2FA22EE4BAC00305E1C /* OutlineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlineTableViewController.swift; sourceTree = "<group>"; };
+		AD25D2FC22EE4BAC00305E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Outline.storyboard; sourceTree = "<group>"; };
+		AD25D2FD22EE4BAC00305E1C /* ReaderFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderFactory.swift; sourceTree = "<group>"; };
+		AD25D2FE22EE4BAC00305E1C /* ReaderError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderError.swift; sourceTree = "<group>"; };
+		AD25D2FF22EE4BAC00305E1C /* ReaderModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderModule.swift; sourceTree = "<group>"; };
+		AD25D30022EE4BAC00305E1C /* ReaderFormatModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderFormatModule.swift; sourceTree = "<group>"; };
+		AD25D30222EE4BAC00305E1C /* EPUBModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPUBModule.swift; sourceTree = "<group>"; };
+		AD25D30322EE4BAC00305E1C /* AssociatedColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssociatedColors.swift; sourceTree = "<group>"; };
+		AD25D30722EE4BAC00305E1C /* UserSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingsTableViewController.swift; sourceTree = "<group>"; };
+		AD25D30822EE4BAC00305E1C /* AdvancedSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedSettingsViewController.swift; sourceTree = "<group>"; };
+		AD25D30C22EE4BAC00305E1C /* FontSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSelectionViewController.swift; sourceTree = "<group>"; };
+		AD25D30D22EE4BAC00305E1C /* EPUBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPUBViewController.swift; sourceTree = "<group>"; };
+		AD25D30E22EE4BAC00305E1C /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		AD25D31022EE4BAC00305E1C /* OPDSNavigationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSNavigationTableViewCell.swift; sourceTree = "<group>"; };
+		AD25D31122EE4BAC00305E1C /* OPDSGroupCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSGroupCollectionViewCell.swift; sourceTree = "<group>"; };
+		AD25D31222EE4BAC00305E1C /* OPDSRootTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSRootTableViewController.swift; sourceTree = "<group>"; };
+		AD25D31322EE4BAC00305E1C /* OPDSModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSModule.swift; sourceTree = "<group>"; };
+		AD25D31422EE4BAD00305E1C /* OPDSGroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSGroupTableViewCell.swift; sourceTree = "<group>"; };
+		AD25D31522EE4BAD00305E1C /* OPDSPublicationInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSPublicationInfoViewController.swift; sourceTree = "<group>"; };
+		AD25D31622EE4BAD00305E1C /* OPDSFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSFactory.swift; sourceTree = "<group>"; };
+		AD25D31722EE4BAD00305E1C /* OPDSPlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSPlaceholderView.swift; sourceTree = "<group>"; };
+		AD25D31922EE4BAD00305E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OPDS.storyboard; sourceTree = "<group>"; };
+		AD25D31A22EE4BAD00305E1C /* OPDSCatalogSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSCatalogSelectorViewController.swift; sourceTree = "<group>"; };
+		AD25D31B22EE4BAD00305E1C /* OPDSPublicationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSPublicationTableViewCell.swift; sourceTree = "<group>"; };
+		AD25D31C22EE4BAD00305E1C /* OPDSFacetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSFacetViewController.swift; sourceTree = "<group>"; };
+		AD25D31E22EE4BAD00305E1C /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
+		AD25D31F22EE4BAD00305E1C /* AppModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
+		AD25D32122EE4BAD00305E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/App.storyboard; sourceTree = "<group>"; };
+		AD25D32322EE4BAD00305E1C /* ActivityStarter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityStarter.swift; sourceTree = "<group>"; };
+		AD25D32622EE4BAD00305E1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AD25D32722EE4BAD00305E1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD25D32B22EE4BAD00305E1C /* 1.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.epub; sourceTree = "<group>"; };
+		AD25D32C22EE4BAD00305E1C /* 6.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.epub; sourceTree = "<group>"; };
+		AD25D32D22EE4BAD00305E1C /* 5.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.epub; sourceTree = "<group>"; };
+		AD25D32E22EE4BAD00305E1C /* 1.cbz */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.cbz; sourceTree = "<group>"; };
+		AD25D32F22EE4BAD00305E1C /* 4.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.epub; sourceTree = "<group>"; };
+		AD25D33022EE4BAD00305E1C /* 3.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.epub; sourceTree = "<group>"; };
+		AD25D33122EE4BAD00305E1C /* 2.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.epub; sourceTree = "<group>"; };
+		AD25D33622EE4BAD00305E1C /* DRMLibraryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRMLibraryService.swift; sourceTree = "<group>"; };
+		AD25D33822EE4BAD00305E1C /* LCPLibraryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCPLibraryService.swift; sourceTree = "<group>"; };
+		AD25D33A22EE4BAD00305E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LCPAuthenticationViewController.xib; sourceTree = "<group>"; };
+		AD25D33B22EE4BAD00305E1C /* LCPAuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCPAuthenticationViewController.swift; sourceTree = "<group>"; };
+		AD25D33E22EE4BAD00305E1C /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		AD25D33F22EE4BAD00305E1C /* PublicationMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicationMenuViewController.swift; sourceTree = "<group>"; };
+		AD25D34022EE4BAD00305E1C /* LibraryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryService.swift; sourceTree = "<group>"; };
+		AD25D34222EE4BAD00305E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Library.storyboard; sourceTree = "<group>"; };
+		AD25D34422EE4BAD00305E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PublicationMenuViewController.xib; sourceTree = "<group>"; };
+		AD25D34622EE4BAD00305E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PublicationCollectionViewCell.xib; sourceTree = "<group>"; };
+		AD25D34722EE4BAD00305E1C /* LibraryError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryError.swift; sourceTree = "<group>"; };
+		AD25D34822EE4BAD00305E1C /* LibraryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryFactory.swift; sourceTree = "<group>"; };
+		AD25D34A22EE4BAD00305E1C /* BooksDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksDatabase.swift; sourceTree = "<group>"; };
+		AD25D34B22EE4BAD00305E1C /* PublicationCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicationCollectionViewCell.swift; sourceTree = "<group>"; };
+		AD25D34C22EE4BAD00305E1C /* LibraryModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryModule.swift; sourceTree = "<group>"; };
+		AD25D34D22EE4BAD00305E1C /* DetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
+		AD25D34F22EE4BAD00305E1C /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		AD25D35122EE4BAD00305E1C /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		AD25D35222EE4BAD00305E1C /* Publication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Publication.swift; sourceTree = "<group>"; };
+		AD25D35522EE4BAD00305E1C /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		AD25D35622EE4BAD00305E1C /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		AD25D35722EE4BAD00305E1C /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		AD33AE2F22F2701C006E8E9E /* UserSettingsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsNavigationController.swift; sourceTree = "<group>"; };
+		AD7B59FA22EE7E04004ED0F4 /* RNReadiumReactBridgeBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNReadiumReactBridgeBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD7B59FC22EE7E04004ED0F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADD5F53822F1137E005774E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/App.strings; sourceTree = "<group>"; };
+		ADE5072F22EE4D8700FEA6EB /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = "../../../../readium-react/CryptoSwift.framework"; sourceTree = "<group>"; };
+		ADE5073122EE4D9C00FEA6EB /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = "../../../../readium-react/SQLite.framework"; sourceTree = "<group>"; };
+		ADE5073222EE4D9C00FEA6EB /* ZIPFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZIPFoundation.framework; path = "../../../../readium-react/ZIPFoundation.framework"; sourceTree = "<group>"; };
+		ADE5073322EE4D9C00FEA6EB /* GCDWebServers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GCDWebServers.framework; path = "../../../../readium-react/GCDWebServers.framework"; sourceTree = "<group>"; };
+		ADE5073422EE4D9C00FEA6EB /* Minizip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Minizip.framework; path = "../../../../readium-react/Minizip.framework"; sourceTree = "<group>"; };
+		ADE5073522EE4D9C00FEA6EB /* ReadiumOPDS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReadiumOPDS.framework; path = "../../../../readium-react/ReadiumOPDS.framework"; sourceTree = "<group>"; };
+		ADE5073622EE4D9C00FEA6EB /* R2Shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = R2Shared.framework; path = "../../../../readium-react/R2Shared.framework"; sourceTree = "<group>"; };
+		ADE5073722EE4D9C00FEA6EB /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = "../../../../readium-react/MBProgressHUD.framework"; sourceTree = "<group>"; };
+		ADE5073822EE4D9C00FEA6EB /* R2Streamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = R2Streamer.framework; path = "../../../../readium-react/R2Streamer.framework"; sourceTree = "<group>"; };
+		ADE5073922EE4D9C00FEA6EB /* R2Navigator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = R2Navigator.framework; path = "../../../../readium-react/R2Navigator.framework"; sourceTree = "<group>"; };
+		ADE5073A22EE4D9C00FEA6EB /* Fuzi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fuzi.framework; path = "../../../../readium-react/Fuzi.framework"; sourceTree = "<group>"; };
+		ADE5073B22EE4D9C00FEA6EB /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = "../../../../readium-react/Kingfisher.framework"; sourceTree = "<group>"; };
+		ADE5074722EE4DBD00FEA6EB /* ReadiumOPDS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReadiumOPDS.framework; sourceTree = "<group>"; };
+		ADE5074822EE4DBD00FEA6EB /* R2Streamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = R2Streamer.framework; sourceTree = "<group>"; };
+		ADE5074922EE4DBD00FEA6EB /* R2Navigator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = R2Navigator.framework; sourceTree = "<group>"; };
+		ADE5074A22EE4DBD00FEA6EB /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SQLite.framework; sourceTree = "<group>"; };
+		ADE5074B22EE4DBD00FEA6EB /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = "<group>"; };
+		ADE5074C22EE4DBD00FEA6EB /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = "<group>"; };
+		ADE5074D22EE4DBD00FEA6EB /* Minizip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Minizip.framework; sourceTree = "<group>"; };
+		ADE5074E22EE4DBD00FEA6EB /* R2Shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = R2Shared.framework; sourceTree = "<group>"; };
+		ADE5074F22EE4DBD00FEA6EB /* ZIPFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZIPFoundation.framework; sourceTree = "<group>"; };
+		ADE5075022EE4DBE00FEA6EB /* GCDWebServers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GCDWebServers.framework; sourceTree = "<group>"; };
+		ADE5075122EE4DBE00FEA6EB /* Fuzi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fuzi.framework; sourceTree = "<group>"; };
+		ADE5075222EE4DBE00FEA6EB /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = "<group>"; };
+		ADF19CDB22F0FF8E0032A03B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LCPAuthenticationViewController.strings; sourceTree = "<group>"; };
+		ADF19CDC22F101120032A03B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/PublicationMenuViewController.strings; sourceTree = "<group>"; };
+		B3E7B5881CC2AC0600A0062D /* RNReadiumReactBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNReadiumReactBridge.h; sourceTree = "<group>"; };
+		B3E7B5891CC2AC0600A0062D /* RNReadiumReactBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNReadiumReactBridge.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58B511D81A9E6C8500147676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD7B59F722EE7E04004ED0F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		134814211AA4EA7D00B7C361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				134814201AA4EA6300B7C361 /* libRNReadiumReactBridge.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58B511D21A9E6C8500147676 = {
+			isa = PBXGroup;
+			children = (
+				ADE5075222EE4DBE00FEA6EB /* CryptoSwift.framework */,
+				ADE5075122EE4DBE00FEA6EB /* Fuzi.framework */,
+				ADE5075022EE4DBE00FEA6EB /* GCDWebServers.framework */,
+				ADE5074C22EE4DBD00FEA6EB /* Kingfisher.framework */,
+				ADE5074B22EE4DBD00FEA6EB /* MBProgressHUD.framework */,
+				ADE5074D22EE4DBD00FEA6EB /* Minizip.framework */,
+				ADE5074922EE4DBD00FEA6EB /* R2Navigator.framework */,
+				ADE5074E22EE4DBD00FEA6EB /* R2Shared.framework */,
+				ADE5074822EE4DBD00FEA6EB /* R2Streamer.framework */,
+				ADE5074722EE4DBD00FEA6EB /* ReadiumOPDS.framework */,
+				ADE5074A22EE4DBD00FEA6EB /* SQLite.framework */,
+				ADE5074F22EE4DBD00FEA6EB /* ZIPFoundation.framework */,
+				AD25D2E422EE4BAC00305E1C /* Source */,
+				B3E7B5881CC2AC0600A0062D /* RNReadiumReactBridge.h */,
+				B3E7B5891CC2AC0600A0062D /* RNReadiumReactBridge.m */,
+				AD011B3D22F2642D000051AB /* RNReadiumReactBridge-Header.h */,
+				AD7B59FB22EE7E04004ED0F4 /* RNReadiumReactBridgeBundle */,
+				134814211AA4EA7D00B7C361 /* Products */,
+				ADE5072E22EE4D8700FEA6EB /* Frameworks */,
+				AD7B59FA22EE7E04004ED0F4 /* RNReadiumReactBridgeBundle.bundle */,
+			);
+			sourceTree = "<group>";
+		};
+		AD25D2E422EE4BAC00305E1C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D2E522EE4BAC00305E1C /* Reader */,
+				AD25D30F22EE4BAC00305E1C /* OPDS */,
+				AD25D31D22EE4BAD00305E1C /* App */,
+				AD25D32322EE4BAD00305E1C /* ActivityStarter.swift */,
+				AD25D32422EE4BAD00305E1C /* Resources */,
+				AD25D33422EE4BAD00305E1C /* Library */,
+				AD25D34E22EE4BAD00305E1C /* About */,
+				AD25D35022EE4BAD00305E1C /* Common */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		AD25D2E522EE4BAC00305E1C /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D2E622EE4BAC00305E1C /* CBZ */,
+				AD25D2E922EE4BAC00305E1C /* PDF */,
+				AD25D2EC22EE4BAC00305E1C /* Common */,
+				AD25D2FD22EE4BAC00305E1C /* ReaderFactory.swift */,
+				AD25D2FE22EE4BAC00305E1C /* ReaderError.swift */,
+				AD25D2FF22EE4BAC00305E1C /* ReaderModule.swift */,
+				AD25D30022EE4BAC00305E1C /* ReaderFormatModule.swift */,
+				AD25D30122EE4BAC00305E1C /* EPUB */,
+				AD25D30E22EE4BAC00305E1C /* Toast.swift */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
+		AD25D2E622EE4BAC00305E1C /* CBZ */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D2E722EE4BAC00305E1C /* CBZModule.swift */,
+				AD25D2E822EE4BAC00305E1C /* CBZViewController.swift */,
+			);
+			path = CBZ;
+			sourceTree = "<group>";
+		};
+		AD25D2E922EE4BAC00305E1C /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D2EA22EE4BAC00305E1C /* PDFModule.swift */,
+				AD25D2EB22EE4BAC00305E1C /* PDFViewController.swift */,
+			);
+			path = PDF;
+			sourceTree = "<group>";
+		};
+		AD25D2EC22EE4BAC00305E1C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D2ED22EE4BAC00305E1C /* DRM */,
+				AD25D2F322EE4BAC00305E1C /* ReaderViewController.swift */,
+				AD25D2F422EE4BAC00305E1C /* Bookmark */,
+				AD25D2F922EE4BAC00305E1C /* Outline */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AD25D2ED22EE4BAC00305E1C /* DRM */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D2EE22EE4BAC00305E1C /* LCPViewModel.swift */,
+				AD25D2EF22EE4BAC00305E1C /* DRM.storyboard */,
+				AD25D2F122EE4BAC00305E1C /* DRMManagementTableViewController.swift */,
+				AD25D2F222EE4BAC00305E1C /* DRMViewModel.swift */,
+			);
+			path = DRM;
+			sourceTree = "<group>";
+		};
+		AD25D2F422EE4BAC00305E1C /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D2F522EE4BAC00305E1C /* BookmarkDatabase.swift */,
+				AD25D2F622EE4BAC00305E1C /* BookmarkCell.swift */,
+				AD25D2F722EE4BAC00305E1C /* Bookmark.swift */,
+				AD25D2F822EE4BAC00305E1C /* BookmarkDataSource.swift */,
+			);
+			path = Bookmark;
+			sourceTree = "<group>";
+		};
+		AD25D2F922EE4BAC00305E1C /* Outline */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D2FA22EE4BAC00305E1C /* OutlineTableViewController.swift */,
+				AD25D2FB22EE4BAC00305E1C /* Outline.storyboard */,
+			);
+			path = Outline;
+			sourceTree = "<group>";
+		};
+		AD25D30122EE4BAC00305E1C /* EPUB */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D30222EE4BAC00305E1C /* EPUBModule.swift */,
+				AD25D30322EE4BAC00305E1C /* AssociatedColors.swift */,
+				AD25D30422EE4BAC00305E1C /* User Settings */,
+				AD25D30D22EE4BAC00305E1C /* EPUBViewController.swift */,
+			);
+			path = EPUB;
+			sourceTree = "<group>";
+		};
+		AD25D30422EE4BAC00305E1C /* User Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AD011A4122F212D5000051AB /* UserSettings.storyboard */,
+				AD25D30722EE4BAC00305E1C /* UserSettingsTableViewController.swift */,
+				AD25D30822EE4BAC00305E1C /* AdvancedSettingsViewController.swift */,
+				AD25D30C22EE4BAC00305E1C /* FontSelectionViewController.swift */,
+				AD011B3F22F264E4000051AB /* tttViewController.swift */,
+				AD011B4822F26BFD000051AB /* MyNavViewController.swift */,
+				AD33AE2F22F2701C006E8E9E /* UserSettingsNavigationController.swift */,
+			);
+			path = "User Settings";
+			sourceTree = "<group>";
+		};
+		AD25D30F22EE4BAC00305E1C /* OPDS */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D31022EE4BAC00305E1C /* OPDSNavigationTableViewCell.swift */,
+				AD25D31122EE4BAC00305E1C /* OPDSGroupCollectionViewCell.swift */,
+				AD25D31222EE4BAC00305E1C /* OPDSRootTableViewController.swift */,
+				AD25D31322EE4BAC00305E1C /* OPDSModule.swift */,
+				AD25D31422EE4BAD00305E1C /* OPDSGroupTableViewCell.swift */,
+				AD25D31522EE4BAD00305E1C /* OPDSPublicationInfoViewController.swift */,
+				AD25D31622EE4BAD00305E1C /* OPDSFactory.swift */,
+				AD25D31722EE4BAD00305E1C /* OPDSPlaceholderView.swift */,
+				AD25D31822EE4BAD00305E1C /* OPDS.storyboard */,
+				AD25D31A22EE4BAD00305E1C /* OPDSCatalogSelectorViewController.swift */,
+				AD25D31B22EE4BAD00305E1C /* OPDSPublicationTableViewCell.swift */,
+				AD25D31C22EE4BAD00305E1C /* OPDSFacetViewController.swift */,
+			);
+			path = OPDS;
+			sourceTree = "<group>";
+		};
+		AD25D31D22EE4BAD00305E1C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D31E22EE4BAD00305E1C /* AboutTableViewController.swift */,
+				AD25D31F22EE4BAD00305E1C /* AppModule.swift */,
+				AD25D32022EE4BAD00305E1C /* App.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AD25D32422EE4BAD00305E1C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D32522EE4BAD00305E1C /* Localizable.strings */,
+				AD25D32722EE4BAD00305E1C /* Assets.xcassets */,
+				AD25D32A22EE4BAD00305E1C /* Samples */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AD25D32A22EE4BAD00305E1C /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D32B22EE4BAD00305E1C /* 1.epub */,
+				AD25D32C22EE4BAD00305E1C /* 6.epub */,
+				AD25D32D22EE4BAD00305E1C /* 5.epub */,
+				AD25D32E22EE4BAD00305E1C /* 1.cbz */,
+				AD25D32F22EE4BAD00305E1C /* 4.epub */,
+				AD25D33022EE4BAD00305E1C /* 3.epub */,
+				AD25D33122EE4BAD00305E1C /* 2.epub */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
+		AD25D33422EE4BAD00305E1C /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D33522EE4BAD00305E1C /* DRM */,
+				AD25D33E22EE4BAD00305E1C /* LibraryViewController.swift */,
+				AD25D33F22EE4BAD00305E1C /* PublicationMenuViewController.swift */,
+				AD25D34022EE4BAD00305E1C /* LibraryService.swift */,
+				AD25D34122EE4BAD00305E1C /* Library.storyboard */,
+				AD25D34322EE4BAD00305E1C /* PublicationMenuViewController.xib */,
+				AD25D34522EE4BAD00305E1C /* PublicationCollectionViewCell.xib */,
+				AD25D34722EE4BAD00305E1C /* LibraryError.swift */,
+				AD25D34822EE4BAD00305E1C /* LibraryFactory.swift */,
+				AD25D34922EE4BAD00305E1C /* DB */,
+				AD25D34B22EE4BAD00305E1C /* PublicationCollectionViewCell.swift */,
+				AD25D34C22EE4BAD00305E1C /* LibraryModule.swift */,
+				AD25D34D22EE4BAD00305E1C /* DetailsTableViewController.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		AD25D33522EE4BAD00305E1C /* DRM */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D33622EE4BAD00305E1C /* DRMLibraryService.swift */,
+				AD25D33722EE4BAD00305E1C /* LCP */,
+			);
+			path = DRM;
+			sourceTree = "<group>";
+		};
+		AD25D33722EE4BAD00305E1C /* LCP */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D33822EE4BAD00305E1C /* LCPLibraryService.swift */,
+				AD25D33922EE4BAD00305E1C /* LCPAuthenticationViewController.xib */,
+				AD25D33B22EE4BAD00305E1C /* LCPAuthenticationViewController.swift */,
+			);
+			path = LCP;
+			sourceTree = "<group>";
+		};
+		AD25D34922EE4BAD00305E1C /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D34A22EE4BAD00305E1C /* BooksDatabase.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		AD25D34E22EE4BAD00305E1C /* About */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D34F22EE4BAD00305E1C /* About.storyboard */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		AD25D35022EE4BAD00305E1C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D35122EE4BAD00305E1C /* Connection.swift */,
+				AD25D35222EE4BAD00305E1C /* Publication.swift */,
+				AD25D35422EE4BAD00305E1C /* Toolkit */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AD25D35422EE4BAD00305E1C /* Toolkit */ = {
+			isa = PBXGroup;
+			children = (
+				AD25D35522EE4BAD00305E1C /* Result.swift */,
+				AD25D35622EE4BAD00305E1C /* UIViewController.swift */,
+				AD25D35722EE4BAD00305E1C /* UIImageExtension.swift */,
+			);
+			path = Toolkit;
+			sourceTree = "<group>";
+		};
+		AD7B59FB22EE7E04004ED0F4 /* RNReadiumReactBridgeBundle */ = {
+			isa = PBXGroup;
+			children = (
+				AD7B59FC22EE7E04004ED0F4 /* Info.plist */,
+			);
+			path = RNReadiumReactBridgeBundle;
+			sourceTree = "<group>";
+		};
+		ADE5072E22EE4D8700FEA6EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADE5073A22EE4D9C00FEA6EB /* Fuzi.framework */,
+				ADE5073322EE4D9C00FEA6EB /* GCDWebServers.framework */,
+				ADE5073B22EE4D9C00FEA6EB /* Kingfisher.framework */,
+				ADE5073722EE4D9C00FEA6EB /* MBProgressHUD.framework */,
+				ADE5073422EE4D9C00FEA6EB /* Minizip.framework */,
+				ADE5073922EE4D9C00FEA6EB /* R2Navigator.framework */,
+				ADE5073622EE4D9C00FEA6EB /* R2Shared.framework */,
+				ADE5073822EE4D9C00FEA6EB /* R2Streamer.framework */,
+				ADE5073522EE4D9C00FEA6EB /* ReadiumOPDS.framework */,
+				ADE5073122EE4D9C00FEA6EB /* SQLite.framework */,
+				ADE5073222EE4D9C00FEA6EB /* ZIPFoundation.framework */,
+				ADE5072F22EE4D8700FEA6EB /* CryptoSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58B511DA1A9E6C8500147676 /* RNReadiumReactBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNReadiumReactBridge" */;
+			buildPhases = (
+				58B511D71A9E6C8500147676 /* Sources */,
+				58B511D81A9E6C8500147676 /* Frameworks */,
+				58B511D91A9E6C8500147676 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNReadiumReactBridge;
+			productName = RCTDataManager;
+			productReference = 134814201AA4EA6300B7C361 /* libRNReadiumReactBridge.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AD7B59F922EE7E04004ED0F4 /* RNReadiumReactBridgeBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD7B59FF22EE7E04004ED0F4 /* Build configuration list for PBXNativeTarget "RNReadiumReactBridgeBundle" */;
+			buildPhases = (
+				AD7B59F622EE7E04004ED0F4 /* Sources */,
+				AD7B59F722EE7E04004ED0F4 /* Frameworks */,
+				AD7B59F822EE7E04004ED0F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD7B5A1D22EE80BB004ED0F4 /* PBXTargetDependency */,
+			);
+			name = RNReadiumReactBridgeBundle;
+			productName = RNReadiumReactBridgeBundle;
+			productReference = AD7B59FA22EE7E04004ED0F4 /* RNReadiumReactBridgeBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58B511D31A9E6C8500147676 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					58B511DA1A9E6C8500147676 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					AD7B59F922EE7E04004ED0F4 = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNReadiumReactBridge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 58B511D21A9E6C8500147676;
+			productRefGroup = 58B511D21A9E6C8500147676;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58B511DA1A9E6C8500147676 /* RNReadiumReactBridge */,
+				AD7B59F922EE7E04004ED0F4 /* RNReadiumReactBridgeBundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD7B59F822EE7E04004ED0F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD33AE3222F30C84006E8E9E /* Assets.xcassets in Resources */,
+				ADF19CF322F102560032A03B /* Localizable.strings in Resources */,
+				ADF19CE922F102410032A03B /* DRM.storyboard in Resources */,
+				AD011A4322F212D5000051AB /* UserSettings.storyboard in Resources */,
+				ADF19CEA22F102410032A03B /* Outline.storyboard in Resources */,
+				ADF19CEC22F102410032A03B /* OPDS.storyboard in Resources */,
+				ADF19CED22F102410032A03B /* App.storyboard in Resources */,
+				ADF19CEE22F102410032A03B /* LCPAuthenticationViewController.xib in Resources */,
+				ADF19CEF22F102410032A03B /* Library.storyboard in Resources */,
+				ADF19CF022F102410032A03B /* PublicationMenuViewController.xib in Resources */,
+				ADF19CF122F102410032A03B /* PublicationCollectionViewCell.xib in Resources */,
+				ADF19CF222F102410032A03B /* About.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58B511D71A9E6C8500147676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD25D35C22EE4BAD00305E1C /* LCPViewModel.swift in Sources */,
+				AD011B4022F264E4000051AB /* tttViewController.swift in Sources */,
+				AD25D37922EE4BAD00305E1C /* OPDSCatalogSelectorViewController.swift in Sources */,
+				AD25D38722EE4BAD00305E1C /* BooksDatabase.swift in Sources */,
+				AD25D37E22EE4BAD00305E1C /* ActivityStarter.swift in Sources */,
+				AD25D37422EE4BAD00305E1C /* OPDSModule.swift in Sources */,
+				AD25D36922EE4BAD00305E1C /* EPUBModule.swift in Sources */,
+				AD25D38422EE4BAD00305E1C /* LibraryService.swift in Sources */,
+				AD25D35D22EE4BAD00305E1C /* DRMManagementTableViewController.swift in Sources */,
+				AD25D37D22EE4BAD00305E1C /* AppModule.swift in Sources */,
+				AD25D37722EE4BAD00305E1C /* OPDSFactory.swift in Sources */,
+				AD25D36522EE4BAD00305E1C /* ReaderFactory.swift in Sources */,
+				AD25D38322EE4BAD00305E1C /* PublicationMenuViewController.swift in Sources */,
+				AD25D36822EE4BAD00305E1C /* ReaderFormatModule.swift in Sources */,
+				AD25D38822EE4BAD00305E1C /* PublicationCollectionViewCell.swift in Sources */,
+				AD25D35B22EE4BAD00305E1C /* PDFViewController.swift in Sources */,
+				B3E7B58A1CC2AC0600A0062D /* RNReadiumReactBridge.m in Sources */,
+				AD33AE3022F2701C006E8E9E /* UserSettingsNavigationController.swift in Sources */,
+				AD25D36722EE4BAD00305E1C /* ReaderModule.swift in Sources */,
+				AD25D36322EE4BAD00305E1C /* BookmarkDataSource.swift in Sources */,
+				AD25D39022EE4BAD00305E1C /* UIImageExtension.swift in Sources */,
+				AD25D37522EE4BAD00305E1C /* OPDSGroupTableViewCell.swift in Sources */,
+				AD25D36B22EE4BAD00305E1C /* UserSettingsTableViewController.swift in Sources */,
+				AD25D37B22EE4BAD00305E1C /* OPDSFacetViewController.swift in Sources */,
+				AD25D37F22EE4BAD00305E1C /* DRMLibraryService.swift in Sources */,
+				AD25D36022EE4BAD00305E1C /* BookmarkDatabase.swift in Sources */,
+				AD25D36C22EE4BAD00305E1C /* AdvancedSettingsViewController.swift in Sources */,
+				AD25D37022EE4BAD00305E1C /* Toast.swift in Sources */,
+				AD25D36422EE4BAD00305E1C /* OutlineTableViewController.swift in Sources */,
+				AD25D35E22EE4BAD00305E1C /* DRMViewModel.swift in Sources */,
+				AD25D36622EE4BAD00305E1C /* ReaderError.swift in Sources */,
+				AD25D38022EE4BAD00305E1C /* LCPLibraryService.swift in Sources */,
+				AD25D38C22EE4BAD00305E1C /* Publication.swift in Sources */,
+				AD25D36F22EE4BAD00305E1C /* EPUBViewController.swift in Sources */,
+				AD25D37222EE4BAD00305E1C /* OPDSGroupCollectionViewCell.swift in Sources */,
+				AD25D36E22EE4BAD00305E1C /* FontSelectionViewController.swift in Sources */,
+				AD25D35F22EE4BAD00305E1C /* ReaderViewController.swift in Sources */,
+				AD25D35922EE4BAD00305E1C /* CBZViewController.swift in Sources */,
+				AD25D36A22EE4BAD00305E1C /* AssociatedColors.swift in Sources */,
+				AD25D36122EE4BAD00305E1C /* BookmarkCell.swift in Sources */,
+				AD25D37C22EE4BAD00305E1C /* AboutTableViewController.swift in Sources */,
+				AD25D38222EE4BAD00305E1C /* LibraryViewController.swift in Sources */,
+				AD25D37A22EE4BAD00305E1C /* OPDSPublicationTableViewCell.swift in Sources */,
+				AD25D38F22EE4BAD00305E1C /* UIViewController.swift in Sources */,
+				AD25D35A22EE4BAD00305E1C /* PDFModule.swift in Sources */,
+				AD25D38122EE4BAD00305E1C /* LCPAuthenticationViewController.swift in Sources */,
+				AD25D38922EE4BAD00305E1C /* LibraryModule.swift in Sources */,
+				AD25D37822EE4BAD00305E1C /* OPDSPlaceholderView.swift in Sources */,
+				AD25D38E22EE4BAD00305E1C /* Result.swift in Sources */,
+				AD25D38522EE4BAD00305E1C /* LibraryError.swift in Sources */,
+				AD011B4922F26BFD000051AB /* MyNavViewController.swift in Sources */,
+				AD25D37322EE4BAD00305E1C /* OPDSRootTableViewController.swift in Sources */,
+				AD25D37122EE4BAD00305E1C /* OPDSNavigationTableViewCell.swift in Sources */,
+				AD25D38622EE4BAD00305E1C /* LibraryFactory.swift in Sources */,
+				AD25D38B22EE4BAD00305E1C /* Connection.swift in Sources */,
+				AD25D38A22EE4BAD00305E1C /* DetailsTableViewController.swift in Sources */,
+				AD25D37622EE4BAD00305E1C /* OPDSPublicationInfoViewController.swift in Sources */,
+				AD25D35822EE4BAD00305E1C /* CBZModule.swift in Sources */,
+				AD25D36222EE4BAD00305E1C /* Bookmark.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD7B59F622EE7E04004ED0F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD7B5A1D22EE80BB004ED0F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58B511DA1A9E6C8500147676 /* RNReadiumReactBridge */;
+			targetProxy = AD7B5A1C22EE80BB004ED0F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD011A4122F212D5000051AB /* UserSettings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD011A4222F212D5000051AB /* Base */,
+			);
+			name = UserSettings.storyboard;
+			sourceTree = "<group>";
+		};
+		AD25D2EF22EE4BAC00305E1C /* DRM.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD25D2F022EE4BAC00305E1C /* Base */,
+			);
+			name = DRM.storyboard;
+			sourceTree = "<group>";
+		};
+		AD25D2FB22EE4BAC00305E1C /* Outline.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD25D2FC22EE4BAC00305E1C /* Base */,
+			);
+			name = Outline.storyboard;
+			sourceTree = "<group>";
+		};
+		AD25D31822EE4BAD00305E1C /* OPDS.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD25D31922EE4BAD00305E1C /* Base */,
+			);
+			name = OPDS.storyboard;
+			sourceTree = "<group>";
+		};
+		AD25D32022EE4BAD00305E1C /* App.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD25D32122EE4BAD00305E1C /* Base */,
+				ADD5F53822F1137E005774E9 /* en */,
+			);
+			name = App.storyboard;
+			sourceTree = "<group>";
+		};
+		AD25D32522EE4BAD00305E1C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD25D32622EE4BAD00305E1C /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		AD25D33922EE4BAD00305E1C /* LCPAuthenticationViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD25D33A22EE4BAD00305E1C /* Base */,
+				ADF19CDB22F0FF8E0032A03B /* en */,
+			);
+			name = LCPAuthenticationViewController.xib;
+			sourceTree = "<group>";
+		};
+		AD25D34122EE4BAD00305E1C /* Library.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD25D34222EE4BAD00305E1C /* Base */,
+			);
+			name = Library.storyboard;
+			sourceTree = "<group>";
+		};
+		AD25D34322EE4BAD00305E1C /* PublicationMenuViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD25D34422EE4BAD00305E1C /* Base */,
+				ADF19CDC22F101120032A03B /* en */,
+			);
+			name = PublicationMenuViewController.xib;
+			sourceTree = "<group>";
+		};
+		AD25D34522EE4BAD00305E1C /* PublicationCollectionViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD25D34622EE4BAD00305E1C /* Base */,
+			);
+			name = PublicationCollectionViewCell.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58B511ED1A9E6C8500147676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58B511EE1A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58B511F01A9E6C8500147676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = RNReadiumReactBridge;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		58B511F11A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = RNReadiumReactBridge;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AD7B59FD22EE7E04004ED0F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = RNReadiumReactBridgeBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.readium.RNReadiumReactBridgeBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		AD7B59FE22EE7E04004ED0F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = RNReadiumReactBridgeBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.readium.RNReadiumReactBridgeBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNReadiumReactBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B511ED1A9E6C8500147676 /* Debug */,
+				58B511EE1A9E6C8500147676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNReadiumReactBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B511F01A9E6C8500147676 /* Debug */,
+				58B511F11A9E6C8500147676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD7B59FF22EE7E04004ED0F4 /* Build configuration list for PBXNativeTarget "RNReadiumReactBridgeBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD7B59FD22EE7E04004ED0F4 /* Debug */,
+				AD7B59FE22EE7E04004ED0F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58B511D31A9E6C8500147676 /* Project object */;
+}

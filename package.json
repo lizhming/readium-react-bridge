@@ -1,0 +1,25 @@
+{
+  "name": "readium-react-bridge",
+  "version": "1.0.5",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizhming/readium-react-bridge.git"
+  },
+  "keywords": [
+    "readium-react-bridge"
+  ],
+  "author": "zhongming li <li.zhming@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lizhming/readium-react-bridge/issues"
+  },
+  "homepage": "https://github.com/lizhming/readium-react-bridge#readme",
+  "peerDependencies": {
+    "react-native": ">=0.38.0"
+  }
+}

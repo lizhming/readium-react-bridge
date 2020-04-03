@@ -1,0 +1,4 @@
+framework module ReadiumOPDS {
+  header "ReadiumOPDS-Swift.h"
+  requires objc
+}

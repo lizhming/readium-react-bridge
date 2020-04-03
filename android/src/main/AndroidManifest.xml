@@ -1,0 +1,102 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+  package="com.readium_react_bridge">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:name=".MainApplication"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:allowBackup="false"
+        android:theme="@style/AppTheme1"
+        android:supportsRtl="true" tools:replace="android:allowBackup,android:name,android:theme" android:usesCleartextTraffic="true" tools:targetApi="m">
+    <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+        android:windowSoftInputMode="adjustResize">
+        <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+        <!--</intent-filter>-->
+    </activity>
+        <activity android:name="org.readium.r2.testapp.CatalogActivity"
+            android:theme="@style/AppTheme1">
+        </activity>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" android:theme="@style/AppTheme1" />
+
+        <activity
+            android:name="org.readium.r2.testapp.R2DispatcherActivity"
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="app" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\.epub" />
+                <data android:pathPattern=".*\.lcpl" />
+                <data android:pathPattern=".*\.cbz" />
+                <data android:mimeType="application/epub+zip" />
+                <data android:mimeType="application/x-cbz" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="application/epub+zip" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\.epub" />
+                <data android:pathPattern=".*\.lcpl" />
+                <data android:pathPattern=".*\.cbz" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.readium.r2.testapp.opds.OPDSCatalogActivity"
+            android:label="@string/title_activity_opdscatalog" android:theme="@style/AppTheme1"/>
+        <activity
+            android:name="org.readium.r2.testapp.R2AboutActivity"
+            android:label="@string/title_activity_r2_about"  android:theme="@style/AppTheme1"/>
+        <activity
+            android:name="org.readium.r2.testapp.R2EpubActivity"
+            android:label="@string/title_activity_epub"  android:theme="@style/AppTheme1"/>
+        <activity
+            android:name="org.readium.r2.testapp.DRMManagementActivity" android:theme="@style/AppTheme1"
+            android:label="DRM Management"
+            />
+        <activity
+            android:name="org.readium.r2.testapp.R2OutlineActivity"
+            android:label="@string/title_activity_outline" android:theme="@style/AppTheme1"/>
+        <activity
+            android:name="org.readium.r2.testapp.opds.OPDSListActivity"
+            android:label="@string/title_activity_opds_list" android:theme="@style/AppTheme1"/>
+        <activity
+            android:name="org.readium.r2.testapp.opds.OPDSDetailActivity"
+            android:label="@string/title_activity_opds_detail" android:theme="@style/AppTheme1"/>
+        <activity android:name="org.readium.r2.testapp.audiobook.AudiobookActivity" android:theme="@style/AppTheme1"/>
+    </application>
+
+
+</manifest>
